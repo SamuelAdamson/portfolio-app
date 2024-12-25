@@ -11,3 +11,15 @@ western coloradan. <br>
 
 ### dependencies
 
+[node](https://nodejs.org/en) <br>
+[npm](https://www.npmjs.com/) <br>
+[alpinejs](https://alpinejs.dev/) <br>
+
+### development environment set up
+
+install node packages
+
+```
+cd app/
+npm install
+```
