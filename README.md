@@ -22,3 +22,13 @@ install node packages
 cd app/
 npm install
 ```
+
+### formatting and linting
+
+before committing and pushing to version control, ensure that code passes format and lint checks.
+
+```
+npm run format      # format with prettier
+npm run lint        # lint
+npm run lint:fix    # lint and apply changes
+```
