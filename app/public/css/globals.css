@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/Ubuntu-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/Ubuntu-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/Ubuntu-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: rgb(51, 51, 51);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg-color);
+    min-height: 1000px; /* debug */
+}
