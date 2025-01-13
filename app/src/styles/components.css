@@ -25,7 +25,6 @@
     top: calc(var(--vertical-pad) + var(--inner-vertical-pad));
     right: calc(var(--horizontal-pad) + var(--inner-horizontal-pad));
     display: flex;
-    flex-direction: column;
     z-index: 10;
 }
 .links img {
@@ -33,12 +32,6 @@
     width: var(--social-size);
     cursor: pointer;
 }
-.links .row {
-    display: inherit;
-    flex-direction: row;
-}
 .links a {
     margin: 0.5rem;
-    display: inherit;
-    align-items: center;
 }

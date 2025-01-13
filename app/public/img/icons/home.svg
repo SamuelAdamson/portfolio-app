@@ -1,0 +1,14 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Smaller background with rounded corners -->
+  <rect x="10" y="10" width="180" height="180" rx="10" ry="10" fill="#eceff4"/>
+  
+  <!-- Smaller transparent square with thicker borders -->
+  <rect 
+    x="45" 
+    y="45" 
+    width="110" 
+    height="110" 
+    fill="transparent" 
+    stroke="#000" 
+    stroke-width="20"/>
+</svg>
