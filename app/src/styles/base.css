@@ -4,13 +4,17 @@
     --bg-color-light: rgb(76, 86, 106);
 
     --fg-color-dark: rgb(216, 222, 233);
-    --fg-color-medium: rgb(229, 233, 240);
     --fg-color-light: rgb(236,  239, 244);
 
     /* Sizing and Positioning */
-    --horizontal-pad: 15px;
-    --vertical-pad: 15px;
+    --horizontal-pad: 16px;
+    --vertical-pad: 16px;
+    --inner-horizontal-pad: 32px;
+    --inner-vertical-pad: 32px;
     --content-height: calc(100vh - var(--vertical-pad) - var(--vertical-pad));
+
+    /* Image Sizing */
+    --social-size: clamp(48px, 3vw, 72px);
 }
 
 html {
@@ -23,31 +27,6 @@ body {
     background-color: var(--bg-color-dark);
     overflow-y: visible;
 }
-
-/* Custom scroll bar */
-.scrollable {
-    height: var(--content-height);
-    overflow-y: scroll;
-}
-.scrollable::-webkit-scrollbar {
-    width: 6px;
-}
-.scrollable::-webkit-scrollbar-track {
-    margin-top: 30vh;
-    margin-bottom: 30vh;
-    border-radius: 3px;
-    background-color: var(--bg-color-light);
-}
-.scrollable::-webkit-scrollbar-thumb {
-    background: var(--fg-color-dark);
-    border-radius: 3px;
-    cursor: pointer;
-}
-.scrollable::-webkit-scrollbar-thumb:hover {
-    background: var(--fg-color-light);
-}
-
-
 
 .temp {
     min-height: 2000px;

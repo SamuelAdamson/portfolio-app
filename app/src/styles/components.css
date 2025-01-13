@@ -1,0 +1,30 @@
+/* Custom scroll bar */
+.content {
+    height: var(--content-height);
+    overflow-y: scroll;
+}
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+.content::-webkit-scrollbar-track {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    border-radius: 3px;
+    background-color: var(--bg-color-light);
+}
+.content::-webkit-scrollbar-thumb {
+    background: var(--fg-color-dark);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Social Links */
+.links {
+    position: fixed;
+    bottom: calc(var(--vertical-pad) + var(--inner-vertical-pad));
+    left: calc(var(--horizontal-pad) + var(--inner-horizontal-pad));
+}
+.links img {
+    height: var(--social-size);
+    cursor: pointer;
+}
