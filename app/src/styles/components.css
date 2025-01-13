@@ -2,29 +2,43 @@
 .content {
     height: var(--content-height);
     overflow-y: scroll;
+    padding: var(--inner-vertical-pad) var(--inner-horizontal-pad);
 }
 .content::-webkit-scrollbar {
-    width: 8px;
+    width: var(--scrollbar-width);
 }
 .content::-webkit-scrollbar-track {
     margin-top: 30vh;
     margin-bottom: 30vh;
-    border-radius: 3px;
+    border-radius: var(--scrollbar-border-radius);
     background-color: var(--bg-color-light);
 }
 .content::-webkit-scrollbar-thumb {
     background: var(--fg-color-dark);
-    border-radius: 3px;
+    border-radius: var(--scrollbar-border-radius);
     cursor: pointer;
 }
 
 /* Social Links */
 .links {
     position: fixed;
-    bottom: calc(var(--vertical-pad) + var(--inner-vertical-pad));
-    left: calc(var(--horizontal-pad) + var(--inner-horizontal-pad));
+    top: calc(var(--vertical-pad) + var(--inner-vertical-pad));
+    right: calc(var(--horizontal-pad) + var(--inner-horizontal-pad));
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
 }
 .links img {
     height: var(--social-size);
+    width: var(--social-size);
     cursor: pointer;
+}
+.links .row {
+    display: inherit;
+    flex-direction: row;
+}
+.links a {
+    margin: 0.5rem;
+    display: inherit;
+    align-items: center;
 }

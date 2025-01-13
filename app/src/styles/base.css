@@ -6,6 +6,10 @@
     --fg-color-dark: rgb(216, 222, 233);
     --fg-color-light: rgb(236,  239, 244);
 
+    /* Scrollbar */
+    --scrollbar-width: 8px;
+    --scrollbar-border-radius: 4px;
+
     /* Sizing and Positioning */
     --horizontal-pad: 16px;
     --vertical-pad: 16px;
@@ -26,6 +30,11 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--bg-color-dark);
     overflow-y: visible;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .temp {
