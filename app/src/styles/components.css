@@ -20,18 +20,3 @@
 }
 
 /* Social Links */
-.links {
-    position: fixed;
-    top: calc(var(--vertical-pad) + var(--inner-vertical-pad));
-    right: calc(var(--horizontal-pad) + var(--inner-horizontal-pad));
-    display: flex;
-    z-index: 10;
-}
-.links img {
-    height: var(--social-size);
-    width: var(--social-size);
-    cursor: pointer;
-}
-.links a {
-    margin: 0.5rem;
-}
