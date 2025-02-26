@@ -1,0 +1,27 @@
+/* Menu */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--vertical-pad) var(--horizontal-pad);
+}
+.menu-bar {
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    background-color: var(--fg-color-dark-transparent);
+    backdrop-filter: blur(10px);
+    border-radius: var(--container-border-radius);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 720px) {
+    .menu {
+        padding: 0;
+    }
+    .menu-bar {
+        border-radius: 0;
+    }
+}

@@ -5,17 +5,17 @@
 
     --fg-color-dark: rgb(216, 222, 233);
     --fg-color-light: rgb(236,  239, 244);
+    
+    --fg-color-dark-transparent: rgb(216, 222, 233, 0.2);
 
     /* Scrollbar */
     --scrollbar-width: 8px;
     --scrollbar-border-radius: 4px;
 
     /* Sizing and Positioning */
-    --horizontal-pad: 16px;
-    --vertical-pad: 16px;
-    --inner-horizontal-pad: 32px;
-    --inner-vertical-pad: 32px;
-    --content-height: calc(100vh - var(--vertical-pad) - var(--vertical-pad));
+    --horizontal-pad: 32px;
+    --vertical-pad: 32px;
+    --container-border-radius: 8px;
 
     /* Image Sizing */
     --social-size: clamp(48px, 3vw, 72px);
@@ -26,10 +26,9 @@ html {
 }
 
 body {
-    margin: var(--vertical-pad) var(--horizontal-pad);
     font-family: 'Ubuntu', sans-serif;
-    background-color: var(--bg-color-dark);
-    overflow-y: visible;
+    background-color: var(--bg-color-light);
+    overflow-y: hidden;
 }
 
 a {
